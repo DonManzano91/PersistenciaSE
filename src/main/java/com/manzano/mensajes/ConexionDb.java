@@ -10,9 +10,7 @@ public class ConexionDb {
         Connection conexion = null;
         try {
             conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/mensajes_app","root","");
-            if (conexion!=null){
-                System.out.println("conectado DB");
-            }
+
         } catch(SQLException e) {
             System.out.println("no conectado " + e);
         }
