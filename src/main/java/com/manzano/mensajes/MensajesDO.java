@@ -1,16 +1,16 @@
 package com.manzano.mensajes;
 
-public class Mensajes {
+public class MensajesDO {
     int idMensajes;
     String mensaje;
     String autorMensaje;
     String fechaMensaje;
 
-    public Mensajes(){
+    public MensajesDO(){
 
     }
 
-    public Mensajes(String mensaje, String autorMensaje, String fechaMensaje) {
+    public MensajesDO(String mensaje, String autorMensaje, String fechaMensaje) {
         this.mensaje = mensaje;
         this.autorMensaje = autorMensaje;
         this.fechaMensaje = fechaMensaje;

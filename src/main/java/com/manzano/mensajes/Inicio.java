@@ -17,9 +17,25 @@ public class Inicio {
             System.out.println("3 edita mensaje");
             System.out.println("4 elimina mensaje");
             System.out.println("5 crea mensaje");
-
+            op = sc.nextInt();
+            switch (op){
+                case 1:
+                    MensajesServicio.crearMensaje();
+                    break;
+                case 2:
+                    MensajesServicio.listarMensajes();
+                    break;
+                case 3:
+                    MensajesServicio.actalizarMensajes();
+                    break;
+                case 4:
+                    MensajesServicio.borrarMensajes();
+                    break;
+                default:
+                    break;
+            }
         } while (op != 5);
-        
+
 
     }
 }

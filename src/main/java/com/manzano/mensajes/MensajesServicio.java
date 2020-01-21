@@ -2,11 +2,11 @@ package com.manzano.mensajes;
 
 public class MensajesServicio {
 
-    public static void crearMensaje(Mensajes mensajes){
+    public static void crearMensaje(){
 
     }
 
-    public static void leerMensajes(){
+    public static void listarMensajes(){
 
     }
 
@@ -14,7 +14,7 @@ public class MensajesServicio {
 
     }
 
-    public static void actalizarMensajes(Mensajes mensajes){
+    public static void actalizarMensajes(){
 
     }
 }
