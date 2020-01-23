@@ -16,7 +16,7 @@ public class Inicio {
             System.out.println("2 lista mensaje");
             System.out.println("3 edita mensaje");
             System.out.println("4 elimina mensaje");
-            System.out.println("5 crea mensaje");
+            System.out.println("5 Salir de la App");
             op = sc.nextInt();
             switch (op){
                 case 1:
