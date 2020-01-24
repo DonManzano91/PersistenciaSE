@@ -31,10 +31,18 @@ public class MensajesServicio {
         Scanner sc = new Scanner(System.in);
         int Idborrar = sc.nextInt();
         MensajesDao.borrarMensajesDB(Idborrar);
-        System.out.println("Se borro el registro");
     }
 
     public static void actalizarMensajes(){
-
+        MensajesDao.litarMnsajesDB();
+        System.out.println("Cual es el nuevo Mensaje?");
+        Scanner sc = new Scanner(System.in);
+        String mensajeActualizar = sc.nextLine();
+        System.out.println("Que mensaje desas actualizar");
+        int IdActualizar = sc.nextInt();
+        MensajesDO mensajeActualizado = new MensajesDO();
+        mensajeActualizado.setMensaje(mensajeActualizar);
+        mensajeActualizado.setIdMensajes(IdActualizar);
+        MensajesDao.actalizarMensajesDB(mensajeActualizado);
     }
 }

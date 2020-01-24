@@ -81,6 +81,25 @@ public class MensajesDao {
     }
 
     public static void actalizarMensajesDB(MensajesDO mensajesDO){
+        ConexionDb conexionDb = new ConexionDb();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
 
+        try(Connection conn = conexionDb.getConexion()){
+            try{
+                String consulta = "Update mensajes set mensaje = '"+ mensajesDO.getMensaje()+"' where id_mensajes = "
+                        + mensajesDO.getIdMensajes() ;
+                System.out.println(consulta);
+                ps=conn.prepareStatement(consulta);
+               /* ps.setString(1,mensajesDO.getMensaje());
+                ps.setInt(2, mensajesDO.getIdMensajes());*/
+                ps.executeUpdate(consulta);
+                System.out.println("El mensaje fue actualizados");
+            } catch (SQLException a){
+                System.out.println("No se pudo actualizar: " + a);
+            }
+        }catch (SQLException e){
+            System.out.println(e);
+        }
     }
 }
