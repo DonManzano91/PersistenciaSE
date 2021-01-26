@@ -1,0 +1,8 @@
+Se comparten las siguientes fuentes para acceder a recursos y tutoriales del framework jdbc Mybatis
+
+Tutorial Mybatis
+
+https://www.jc-mouse.net/java/ejemplo-de-operaciones-crud-con-mybatis-3
+
+https://zetcode.com/db/mybatis/
+
